@@ -10,9 +10,10 @@ public class EmailService {
 	}
 
 	public void enviarEmailSaludos(String destinatario) {
-		
+
 		System.out.println("Enviando email a " + destinatario);
 		System.out.println("Mensaje: " + saludator.saludo());
+		
 	}
 
 }
