@@ -11,8 +11,7 @@ public class app {
 		Saludator saludo = null;
 
 		saludo = appContext.getBean(Saludator.class);
-		System.out.println(saludo.saludo());
-		
+		System.out.println(saludo.saludo());		
 
 		((ClassPathXmlApplicationContext) appContext).close();
 
