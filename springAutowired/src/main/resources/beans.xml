@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emailService" class="com.spring.EmailService" autowire="byType">
+	
+	</bean>
+
+	<bean id="saludator" class="com.spring.Saludator" primary="true" >
+	<!--  <bean id="saludator" class="com.spring.Saludator" autowire-candidate="false"> Por si fuera conflictivo-->
+		<property name="mensaje" value="Hola Mundo"></property>
+	</bean>
+	
+	<!-- Si hay 2 beans iguales se establece uno como primario y ya no hay problema -->
+	<bean id="englishSaludator" class="com.spring.Saludator" >
+	<property name="mensaje" value="Hello World !!"></property>
+	</bean>
+
+
+</beans>
