@@ -20,7 +20,6 @@ public class EmailService implements IEmailService {
 		} else {
 			System.out.println("Configurar un destinatario por defecto");
 		}
-
 	}
 
 	public void enviarSaludo(String destinatario) {
@@ -29,7 +28,5 @@ public class EmailService implements IEmailService {
 		System.out.println("Mensaje: " + saludator.saludo());
 
 	}
-
-
 
 }
