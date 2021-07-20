@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="init" default-destroy-method="destroy">
+	<!-- asi se asignaria por defecto tanto init como destroy y se podrian usar en otras clases -->
+
+	<bean id="PersonaDAO" class="com.spring.PersonaDAOImplMemory">
+	
+	</bean>
+		<!-- <bean id="PersonaDAO" class="com.spring.PersonaDAOImplMemory" init-method="init" destroy-method="destroy">
+	
+	</bean>-->
+
+
+
+
+</beans>
