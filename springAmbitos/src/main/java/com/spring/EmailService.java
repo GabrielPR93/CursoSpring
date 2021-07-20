@@ -3,7 +3,7 @@ package com.spring;
 public class EmailService implements IEmailService {
 
 	private Saludator saludator;
-	public String destinatarioPorDefecto;
+	private String destinatarioPorDefecto;
 
 	public void setSaludator(Saludator saludator) {
 		this.saludator = saludator;
