@@ -15,8 +15,8 @@ public class app {
 			System.out.println("Nombre: "+persona.getNombre()+" Edad: "+persona.getEdad());
 		}
 		
+		
 		((ClassPathXmlApplicationContext)applicationContext).close();
 
 	}
-
 }
