@@ -3,9 +3,6 @@ package com.spring;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-
 public class PersonaDAOImplMemory implements PersonaDAO {
 	
 	List<Persona> personas=new ArrayList<Persona>();
