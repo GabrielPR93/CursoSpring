@@ -20,7 +20,6 @@ public class app {
 	emailService = appContext.getBean(IEmailService.class);
 	emailService.enviarSaludo("gabrielpr93@hotmail.com");
 	
-
 	((ClassPathXmlApplicationContext) appContext).close();
 
 	}
