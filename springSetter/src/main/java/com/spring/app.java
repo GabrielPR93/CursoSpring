@@ -9,6 +9,7 @@ public class app {
 		
 	ApplicationContext appContext = new ClassPathXmlApplicationContext("beans.xml");
 		
+
 		Saludator saludo= null;
 
 		saludo=appContext.getBean(Saludator.class);
@@ -17,5 +18,4 @@ public class app {
 		
 		((ClassPathXmlApplicationContext)appContext).close();
 	}
-
 }
