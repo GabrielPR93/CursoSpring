@@ -20,7 +20,7 @@ public class app {
 	System.out.println(emailService2);
 
 	((ClassPathXmlApplicationContext) appContext).close();
-
+	
+	
 	}
-
 }
