@@ -7,6 +7,7 @@ public class app {
 
 	public static void main(String[] args) {
 		
+		
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
 		
 		PersonaDAO personaDAO = applicationContext.getBean(PersonaDAO.class);
@@ -18,5 +19,4 @@ public class app {
 		((ClassPathXmlApplicationContext)applicationContext).close();
 
 	}
-
 }
