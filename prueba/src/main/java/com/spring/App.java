@@ -12,6 +12,7 @@ public class App {
 		
 		Saludator saludo= null;
 		
+		
 		//1.- getBean con Id y casting
 		//saludo = (Saludator)appContext.getBean("saludator");
 		
