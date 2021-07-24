@@ -45,7 +45,6 @@ public class PeliculaDAOImplMemory implements PeliculaDAO {
 	public void init () {
 		
 			peliculas.addAll(catalogosPeliculas.getPeliculas());
-		
 	}
 
 }
