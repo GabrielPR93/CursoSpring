@@ -56,7 +56,13 @@ public class Film {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(genres, id, title, year);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((genres == null) ? 0 : genres.hashCode());
+		result = prime * result + (int) (id ^ (id >>> 32));
+		result = prime * result + ((title == null) ? 0 : title.hashCode());
+		result = prime * result + ((year == null) ? 0 : year.hashCode());
+		return result;
 	}
 
 	@Override
