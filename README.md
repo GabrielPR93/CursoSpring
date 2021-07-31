@@ -2,8 +2,8 @@
 Curso con el framework Spring para plataforma Java
 
 # Introducción
-  . Presentación
-  . Introducción a Spring
+  .Presentación
+  .Introducción a Spring
   . Instalación del entorno de trabajo
   . Estructura de una aplicación empresarial y patrones de diseño
   . Inversión de control e inyección de dependecias
