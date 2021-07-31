@@ -9,10 +9,10 @@ import org.springframework.context.annotation.PropertySource;
 @ComponentScan(basePackages = "com.movieAdvisor")
 @PropertySource("classpath:/movieAdvisor.properties")
 public class AppConfig {
-	
+
 	@Value("${file.path}")
 	private String file;
-	
+
 	@Value("${file.csv.separator}")
 	private String separator;
 
@@ -30,7 +30,5 @@ public class AppConfig {
 	public String getListSeparator() {
 		return listSeparator;
 	}
-	
-	
-	
+
 }

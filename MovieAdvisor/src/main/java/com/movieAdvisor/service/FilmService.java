@@ -12,13 +12,13 @@ import com.movieAdvisor.model.Film;
 
 @Service
 public class FilmService {
-	
+
 	@Autowired
-	FilmDao filmDao;
-	
+	public FilmDao filmDao;
+
 	@Autowired
-	FilmQueryService queryService;
-	
+	public FilmQueryService queryService;
+
 	public Collection<String> findAllGenres() {
 		List<String> result = null;
 
@@ -35,10 +35,11 @@ public class FilmService {
 
 		return result;
 	}
+
 	public Collection<Film> findAll() {
 		return filmDao.findAll();
 	}
-	
+
 	public Collection<Film> findByAnyGenre(String... genres) {
 
 		return queryService.anyGenre(genres).exec();
@@ -48,8 +49,7 @@ public class FilmService {
 	public Collection<Film> findByAllGenres(String... genres) {
 		return queryService.allGenres(genres).exec();
 	}
-	
-	
+
 	public Collection<Film> findByYear(String year) {
 		return queryService.year(year).exec();
 	}
@@ -62,6 +62,4 @@ public class FilmService {
 		return queryService.titleContains(title).exec();
 	}
 
-	
 }
-

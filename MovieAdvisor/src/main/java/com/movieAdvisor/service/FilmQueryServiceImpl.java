@@ -16,18 +16,17 @@ import com.movieAdvisor.model.Film;
 
 @Service
 public class FilmQueryServiceImpl implements FilmQueryService {
-	
+
 	@Autowired
-	private FilmDao dao;
-	
+	public FilmDao dao;
+
 	private Predicate<Film> predicate;
-	
+
 	@PostConstruct
 	public void init() {
-	predicate=null;
+		predicate = null;
 	}
-	
-	
+
 	public Collection<Film> exec() {
 		// @formatter:off
 		return dao.findAll()
@@ -37,13 +36,11 @@ public class FilmQueryServiceImpl implements FilmQueryService {
 		// @formatter:on
 	}
 
-
-	public FilmQueryService anyGenre(String...genres) {
+	public FilmQueryService anyGenre(String... genres) {
 		Predicate<Film> pAnyGenre = (film -> Arrays.stream(genres).anyMatch(film.getGenres()::contains));
 		predicate = (predicate == null) ? pAnyGenre : predicate.and(pAnyGenre);
 		return this;
 	}
-
 
 	public FilmQueryService allGenres(String... genres) {
 		Predicate<Film> pAllGenres = (film -> Arrays.stream(genres).allMatch(film.getGenres()::contains));
@@ -51,15 +48,13 @@ public class FilmQueryServiceImpl implements FilmQueryService {
 		return this;
 	}
 
-	
 	public FilmQueryService year(String year) {
-		
+
 		Predicate<Film> pYear = (film -> film.getYear().equalsIgnoreCase(year));
 		predicate = (predicate == null) ? pYear : predicate.and(pYear);
 		return this;
 	}
 
-	
 	public FilmQueryService betweenYears(String from, String to) {
 		Predicate<Film> pBetweenYears = (film -> {
 			LocalDate fromYear = LocalDate.of(Integer.parseInt(from), 1, 1);
@@ -68,17 +63,16 @@ public class FilmQueryServiceImpl implements FilmQueryService {
 
 			return filmYear.isAfter(fromYear) && filmYear.isBefore(toYear);
 		});
-		
+
 		predicate = (predicate == null) ? pBetweenYears : predicate.and(pBetweenYears);
 
 		return this;
 	}
 
-	
 	public FilmQueryService titleContains(String title) {
-		Predicate<Film> pTitleContains  = (film -> film.getTitle().toLowerCase().contains(title.toLowerCase()));
+		Predicate<Film> pTitleContains = (film -> film.getTitle().toLowerCase().contains(title.toLowerCase()));
 		predicate = (predicate == null) ? pTitleContains : predicate.and(pTitleContains);
-		
+
 		return this;
 	}
 

@@ -25,7 +25,7 @@ public class MovieAdvisorHelp {
 			// @formatter:on
 
 		} catch (IOException e) {
-			System.err.println("Error cargando el texto de la ayuda");
+			System.err.println("Error al cargar el texto de ayuda");
 			System.exit(-1);
 		}
 	}

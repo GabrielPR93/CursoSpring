@@ -1,28 +1,28 @@
-Sintaxis: java -jar movieadvisor.jar [OPCIONES]
+Sintaxis: java -jar movieAdvisor.jar [OPCIONES]
 
 	-lg
-	Lista los diferentes g√©neros de pel√≠culas de la colecci√≥n.
-	No se pueden utilizar m√°s par√°metros.
+	Lista los diferentes gÈneros de pelÌculas de la colecciÛn.
+	No se pueden utilizar m·s par·metros.
 	
 	-ag genero1,genero2,genero...
-	Lista aquellas pel√≠culas que pertenecen a al menos uno de los g√©neros 
-	que se indican.	El listado de g√©neros no puede incluir espacios.
+	Lista aquellas pelÌculas que pertenecen a al menos uno de los gÈneros 
+	que se indican.	El listado de gÈneros no puede incluir espacios.
 	
 	-tg genero1,genero2,genero...
-	Lista aquellas pel√≠culas que pertenecen a todos y cada uno de los 
-	g√©neros que se 	indican. El listado de g√©neros no puede incluir espacios. 
+	Lista aquellas pelÌculas que pertenecen a todos y cada uno de los 
+	gÈneros que se 	indican. El listado de gÈneros no puede incluir espacios. 
 	
-	-y a√±o
-	Lista aquellas pel√≠culas que se estrenaron en el a√±o indicado.
-	El a√±o debe expresarse con 4 cifras.
+	-y aÒo
+	Lista aquellas pelÌculas que se estrenaron en el aÒo indicado.
+	El aÒo debe expresarse con 4 cifras.
 	
 	-b desde,hasta
-	Lista aquellas pel√≠culas que se estrenaron entre los a√±os DESDE y HASTA.
-	Los a√±os indicados est√°n incluidos. Deben expresarse con 4 cifras.
+	Lista aquellas pelÌculas que se estrenaron entre los aÒos DESDE y HASTA.
+	Los aÒos indicados est·n incluidos. Deben expresarse con 4 cifras.
 	
 	-t titulo
 	Lista aquellas pelÌculas cuyo tÌtulo contiene la cadena proporcionada.
-	Se ignorar√° el uso de may√∫sculas/min√∫sculas en la comparaci√≥n.
+	Se ignora el uso de may˙sculas/min˙sculas en la comparaciÛn.
 	
 	-h
 	Muestra este mensaje de ayuda.
@@ -30,23 +30,23 @@ Sintaxis: java -jar movieadvisor.jar [OPCIONES]
 EJEMPLOS DE USO
 
 java -jar movieadvisor.jar -y 2018 -ag Action,Comedy
-Muestra las pel√≠culas estrenadas de 2018 de acci√≥n y/o de comedia.
+Muestra las pelÌculas estrenadas de 2018 de acciÛn y/o de comedia.
 
 java -jar movieadvisor.jar -t heart
-Muestra las pel√≠culas cuyo t√≠tulo contiene la palabra heart.
+Muestra las pelÌculas cuyo tÌtulo contiene la palabra heart.
 
 java -jar movieadvisor.jar -td Action,Sci-Fi -b 1990,2010 -t star
-Muestra las pel√≠culas cuyo t√≠tulo contiene la palabra star, pertenecen al 
-g√©nero de acci√≥n y ciencia ficci√≥n y fueron estrenadas entre 1990 y 2010.   
+Muestra las pelÌculas cuyo tÌtulo contiene la palabra star, pertenecen al 
+gÈneros de acciÛn y ciencia ficciÛn y fueron estrenadas entre 1990 y 2010.   
 
 java -jar movieadvisor.jar -lg
-Muestra un listado con todos los g√©neros.
+Muestra un listado con todos los gÈneros.
 
 
 LICENCIAS
 
-Los datos utilizados sobre pel√≠culas utilizados en este ejemplo son
-reales y est√°n sacados del sitio web www.imdb.com. Ten en cuenta
+Los datos utilizados sobre pelÌculas utilizados en este ejemplo son
+reales y est·n sacados del sitio web www.imdb.com. Ten en cuenta
 que solo puede ser usada con fines personales y no comerciales.
 	
 	 

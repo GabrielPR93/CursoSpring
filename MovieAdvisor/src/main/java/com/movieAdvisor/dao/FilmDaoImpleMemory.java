@@ -13,10 +13,10 @@ import com.movieAdvisor.model.Film;
 @Repository
 public class FilmDaoImpleMemory implements FilmDao {
 
+	public List<Film> peliculas = new ArrayList<>();
+	
 	@Autowired
 	private AppConfig appConfig;
-
-	public List<Film> peliculas = new ArrayList<>();
 
 	@PostConstruct
 	public void init() {
