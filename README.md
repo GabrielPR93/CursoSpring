@@ -1,7 +1,7 @@
 # CursoSpring
 Curso con el framework Spring para plataforma Java
 
-# Introducción
+## Introducción
   - Presentación
   - Introducción a Spring
   - Instalación del entorno de trabajo
